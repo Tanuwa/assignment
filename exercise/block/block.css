@@ -1,0 +1,24 @@
+    .firstBlogPost {
+        margin-top: 200px;
+    }
+    
+    .secondBlogPost {
+        margin-top: 100px;
+    }
+    
+    #sweetPotatoImg {
+        width: 50%;
+        height: auto;
+        float: left;
+        margin: 10px;
+    }
+    
+    #salmonImg {
+        width: 50%;
+        height: auto;
+        float: left;
+        margin: 10px;
+    }
+.date{
+    color: red;
+}

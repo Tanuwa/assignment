@@ -1,0 +1,16 @@
+body {
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmUTJoDAQf5sUckL8qnCaFWYu9d8w-A2nDj-DU_N5auFr4R7ya);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+input {
+    width: 50% padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: aquamarine
+}
+
+button {
+    color: green;
+}

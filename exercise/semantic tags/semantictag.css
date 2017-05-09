@@ -1,0 +1,19 @@
+img {
+    float: left;
+    padding: 20px;
+height: 150px;
+    margin-top: 16px;
+    margin-right: 15px;
+}
+header{
+    font-size: 20px;
+    text-align: center;
+    color: brown;
+    font-family: fantasy;
+}
+body{
+    background-image: url(http://static.wixstatic.com/media/6f0978_0df15154a4e2478284c8b74b8b59c36f.jpg);
+}
+footer {
+    color: bisque;
+}

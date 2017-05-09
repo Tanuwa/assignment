@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel Form</title>
+    <link rel="stylesheet" type="text/css" href="travellList.css">
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <form>
+                    <input class="firstName" id="firstname" name="firstname" type="text">
+                    <input class="lastName" id="lastname" name="lastname" type="text">
+                    <input class="age" id="age" name="age" type="number">
+                    <input class="gender" id="gender" name="gender" type="radio">Female
+                    <input class="gender" name="gender" type="radio">Male<br>
+                    <select name="locaton" id="location">
+  <option value="Salt Lake City">Salt Lake City</option>
+  <option value="Phoenix">Phoenix</option>
+  <option value="Malibu">Malibu</option>
+                  </select>
+                    <input class="date" id="date" name="date" type="date" ;>
+                </form>
+                <button class="submit" onclick="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+                <script src="travellList.js"></script>
+</body>
+</html>

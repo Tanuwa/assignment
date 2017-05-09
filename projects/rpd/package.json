@@ -1,0 +1,14 @@
+{
+  "name": "json-lint-express",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "Tanya",
+  "description": "a simple web server",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.7"
+  }
+}
