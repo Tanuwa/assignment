@@ -1,0 +1,33 @@
+ body {
+     background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsM8jh3Y5uH7vVdjKQC-jkOzxnQg81SeWT-yklGr2pvGNvQeYeMA");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+ }
+ 
+ h1 {
+     color: #333333;
+     font-family: Impact, Charcoal, sans-serif;
+     font-size: 400%;
+     text-align: center;
+ }
+ 
+ label {
+     color: #333333;
+     font-family: Impact, Charcoal, sans-serif;
+ }
+ 
+ footer ul {
+     list-style-type: none;
+     display: inline;
+     width: 100%;
+     float: left;
+     padding: 0;
+ }
+ 
+ footer ul li {
+     list-style-type: none;
+     display: inline;
+     width: 33%;
+     float: left;
+     color: darkblue;
+ }

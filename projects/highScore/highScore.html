@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>High Score </title>
+    <link rel="stylesheet" type="text/css" href="highScore.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <center>
+
+                        <a href="index.html"> Home</a>
+                        <a href="highScore/index.html"> High Scores</a>
+                    </center>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="first">
+
+        <form id="myForm">
+            <div class="enterName">
+                <h4>Name</h4>
+                <input class="input1" id="name" type="text" placeholder="Your Name" name="Enter Name" required/>
+            </div>
+
+
+            <div class="Game">
+                <h4>Game</h4>
+                <input class="input2" id="game" type="text" placeholder="What is Your Game" name="yourGame" required/>
+            </div>
+
+
+            <div class="dateOfTheHighScore">
+                <h4>Date of Your Score</h4>
+                <input class="input3" id="date1" type="date" placeholder="Date of High Score" name="Date of High Score" required/>
+            </div>
+
+            <div class="highScore">
+                <h4>Enter Your Score</h4>
+                <input class="input4" id="highScore" type="number" placeholder="Enter Your Score" name="High Score" required/>
+            </div>
+
+            <div class="msg">
+                <h4> Do you want to include Trash Talking Message</h4>
+                <input id="input5" type="radio" name="msg" value="yes">Oh Yes, I Do.
+
+                <input id="input6" type="radio" name="msg" value="no">No, you are fine.
+            </div>
+            <center>
+                <button id="btn" type="submit" value="Submit">Submit</button>
+            </center>
+        </form>
+    </div>
+
+
+
+
+    <div id="second">
+        <div>
+
+            <table align="right" id="postHighScore">
+                <tr>
+                    <th>Name</th>
+                    <th>Game </th>
+                    <th>Date</th>
+                    <th>High Score</th>
+                    <th>Message</th>
+                </tr>
+
+
+
+
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="highScore.js"></script>
+
+</body>
+
+
+</html>

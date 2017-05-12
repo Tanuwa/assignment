@@ -1,0 +1,58 @@
+body {
+    background-image: url("https://jaymoli.files.wordpress.com/2013/04/i_am_a_winner.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: greenyellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#first {
+    width: 50%;
+    float: left;
+}
+
+/*
+#second {
+    width: 50%;
+    float: right;
+}
+*/
+
+input {
+    border-radius: 30%;
+}
+
+#btn {
+    background-color: greenyellow;
+    border-radius: 30%;
+    color: darkgreen;
+    font-size: 30px;
+    font-family: comic;
+}
+
+#btn:hover {
+    box-shadow: none;
+    border-radius: 100%;
+    background-color: lawngreen;
+    font-size: 50px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-color: green;
+}
+
+table {
+    border: 1px solid black;
+    border-color: green;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 40%;
+    height: 150px;
+}

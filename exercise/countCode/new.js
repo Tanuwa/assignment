@@ -1,17 +1,20 @@
-function CountCode(bigString){
+function CountCode(bigString) {
     var smallString = "code";
-    if (bigString.indexOf(smallString) > -1){
+    if (bigString.indexOf(smallString) > -1) {
         var countTimes = bigString.split(smallString).length - 1;
-        console.log("String appeared "+ countTimes);
-        
-        
-        
-        
-        
+        console.log("String appeared " + countTimes);
+
+
+
+
+
     }
 }
-CountCode("codexxcode") ;
+CountCode("codexxcode");
 //eslu I can use regular expressions
+
+
+
 
 
 another exm.

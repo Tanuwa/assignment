@@ -9,10 +9,6 @@ ul li {
     font-size: 18px;
     transition: 0.2s;
     /* make the list items unselectable */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 
@@ -55,4 +51,19 @@ input {
     text-align: center;
     font-size: 16px;
     border: 2px solid black;
+    border-radius: 10%;
+    margin: auto;
+    border: 2px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.addBtn:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: darkgray;
 }
