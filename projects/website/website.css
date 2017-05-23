@@ -1,0 +1,147 @@
+   body {
+   	font-family: "avenir", sans-serif;
+   	font-size: 14px;
+   	line-height: 1.42857143;
+   	color: #333;
+   	background-color: #fff;
+   }
+   
+   .container-wrapper {
+   	width: 100%;
+   }
+   
+   header {
+   	width: 100%;
+   	margin-top: 10px;
+   	float: left;
+   	padding-bottom: 20px;
+   }
+   
+   header .logo {
+   	width: 20%;
+   	float: left;
+   }
+   
+   .mainBody {
+   	float: left;
+   	width: 100%;
+   }
+   
+   nav {
+   	float: left;
+   	width: 60%;
+   }
+   
+   nav ul {
+   	width: 50%;
+   	margin: 0 auto;
+   	list-style-type: none;
+   	display: inline;
+   }
+   
+   nav ul li {
+   	list-style-type: none;
+   	display: inline;
+   }
+   
+   .search-box {
+   	width: 20%;
+   	float: right;
+   }
+   
+   .positionCnter {
+   	width: 50%;
+   	margin: 0 auto;
+   }
+   /* Dropdown Button */
+   
+   .dropbtn {
+   	background-color: #FFF;
+   	font-style: normal;
+   	letter-spacing: 1px;
+   	font-size: 12px;
+   	font-weight: 100;
+   	padding: 16px;
+   	border: none;
+   	cursor: pointer;
+   	color: #333;
+   	text-transform: uppercase;
+   }
+   /* The container <div> - needed to position the dropdown content */
+   
+   .dropdown {
+   	position: relative;
+   	display: inline-block;
+   }
+   /* Dropdown Content (Hidden by Default) */
+   
+   .dropdown-content {
+   	display: none;
+   	position: absolute;
+   	border: 1px solid #eee;
+   	min-width: 160px;
+   	background-color: #FFF;
+   	top: 3px;
+   	z-index: 1000;
+   	text-align: center;
+   	text-transform: uppercase;
+   	font-size: 12px;
+   }
+   /* Links inside the dropdown */
+   
+   .dropdown-content a {
+   	color: black;
+   	padding: 15px 16px;
+   	text-decoration: none;
+   	display: block;
+   }
+   /* Change color of dropdown links on hover */
+   
+   .dropdown-content a:hover {
+   	background-color: rgb(243, 195, 172);
+   }
+   /* Show the dropdown menu on hover */
+   
+   .dropdown:hover .dropdown-content {
+   	display: block;
+   }
+   /* Change the background color of the dropdown button when the dropdown content is shown */
+   
+   .dropdown:hover .dropbtn {
+   	background-color: #FFF;
+   }
+   
+   .search-box input {
+   	border: 1px solid #e0e0e0;
+   	font-size: 14px;
+   	width: 100%;
+   	height: 33px;
+   	position: relative;
+   	padding-top: 0;
+   	padding-bottom: 0;
+   	font-style: italic;
+   }
+   
+   .search-box input[type="text"] {
+   	font-family: "avenir", sans-serif;
+   	vertical-align: top;
+   	padding-left: 10px;
+   	padding-right: 35px;
+   }
+   
+   .myrow {
+   	height: 70px;
+   	background-color: rgb(243, 195, 172);
+   	padding-top: 20px;
+   }
+   
+   .myClass {
+   	font-size: 20px;
+   	position: absolute;
+   	top: 7px;
+   	region-break-inside: 10px;
+   }
+   
+   #firstPic img {
+   	width: 70%;
+   }

@@ -1,0 +1,57 @@
+<!DOCTYPE hmtl>
+<html>
+
+<head>
+    <title>My todo list</title>
+</head>
+
+<body>
+    <h1>My todo list:</h1>
+    <form>
+        <input type="text" id="item" />
+        <input type="submit" id="save" value="Save" />
+    </form>
+    <ul id="list"></ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Load todo list from server.
+            $.getJSON('http://localhost/server.php', function(res) {
+                $('#list').html('<li>' + res.join('</li><li>') + '</li>');
+            });
+
+            // Add item to list.
+            $("form").submit(function() {
+                var item = $('#item').val();
+                $('#list').append('<li>' + item + '</li>');
+                save();
+                $('#item').val('');
+                return false;
+            });
+
+            // Remove item from list.
+            $('#list li').live('dblclick', function() {
+                $(this).remove();
+                save();
+            });
+
+            // Save list to server.
+            function save() {
+                var items = $('#list li').map(function() {
+                    return $(this).text();
+                }).get();
+
+                $.ajax({
+                    url: 'http://localhost/server.php',
+                    data: {
+                        list: items
+                    }
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+form {
+    border: medium solid black;
+}
+
+h1 {
+    background-color: gray;
+    color: white;
+}
+
+#widthOfMyBox {
+    height: 100px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'> ngmodual
+
+<head>
+	<meta charset="UTF-8">
+	<title>Angular</title>
+
+
+
+</head>
+
+<body ng-controller='MainCtrl'>
+	<div class="container">
+
+		<input type="number" ng-model="num1">
+		<input type="number" ng-model="num2">
+		<button ng-click="sum()"> Sum</button>
+		<h1>{{num1+num2}}</h1>
+
+
+		<div ng-controller="SecondCtrl">
+			{{name}}
+
+			<!--
+		<div id="myForm">
+			
+			<form>
+				<div class="row">
+					<div class="col-xs-4 col-md-4">
+						<div class="form-group">
+							<input ng-model="badge.tytle" type="text" class="form-control" placeholder="numberOne">
+						</div>
+					</div>
+
+					<div class="col-xs-4 col-md-4">
+						<div class="form-group">
+							<input ng-model="badge.url" type="text" class="form-control" placeholder="numberTwo">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+-->
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+		<script src="angularRefresher.js"></script>
+
+</body>
+
+</html>

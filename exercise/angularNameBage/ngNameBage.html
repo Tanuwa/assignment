@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='MyApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="ngNameBage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+
+
+
+<body ng-controller='MainController'>
+    <div class="container">
+        <div class="row">
+
+            <div class=" col-xs-12">
+                <form>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input ng-model="badge.firstname" type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input ng-model="badge.lastname" type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input ng-model="badge.email" type="email" class="form-control" placeholder="Email" required>
+                            </div>
+
+                            <div class="col-xs-6">
+                            </div>
+                            <div class="form-group">
+                                <input ng-model="badge.place" type="text" class="form-control" placeholder="Place of Birth" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input ng-model="badge.phone" type="tel" class="form-control" placeholder="Phone" required>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input ng-model="badge.food" type="text" class="form-control" placeholder="Favorite Food" required>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <textarea rows="5" class="form-control" ng-model="badge.about" placeholder="Tell us about yourself" required>
+                                
+                            </textarea>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <center><button type="submit" class="btn btn-default" ng-click="submit(badge)">Submit</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div ng-repeat="newBadge in allBadges track by $index" class=" col-xs-12">
+                <form>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group ">
+                                <p type="text " class="form-control ">Name: {{newBadge.firstname}}</p>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-6 ">
+                            <div class="form-group ">
+                                <p type="text " class="form-control ">
+                                    Last Name: {{newBadge.lastname}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 ">
+                            <div class="form-group ">
+                                <p type="text " class="form-control ">Email:{{newBadge.email}}</p>
+                            </div>
+
+                            <div class="col-xs-6 ">
+                            </div>
+                            <div class="form-group ">
+                                <p type="text " class="form-control ">Place of Birth:{{newBadge.place}}</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 ">
+                            <div class="form-group ">
+                                <p type="number" class="form-control ">Phone:{{newBadge.phone}}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 ">
+                            <div class="form-group ">
+                                <p type="text " class="form-control ">Favorite Food:{{newBadge.food}}</p>
+                            </div>
+						</div>
+
+
+                        <div class="col-xs-12 ">
+                            <div class="form-group ">
+                                <p type="text " class="form-control " id="widthOfMyBox ">{{newBadge.about}}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js "></script>
+    <script src="ngNameBage.js"></script>
+</body>
+
+</html>

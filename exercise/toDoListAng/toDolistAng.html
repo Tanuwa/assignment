@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Angular</title>
+
+
+
+</head>
+
+<body ng-controller='MainCtrl'>
+	<div class="container">
+		<form>
+			<input type="text" placeholder="Name" required ng-model="newtodo.name">
+			<input type="text" placeholder="Description" required ng-model="newtodo.description">
+			<input type="text" placeholder="URL" required ng-model="newtodo.url">
+			<input type="text" placeholder="Price" required ng-model="newtodo.price">
+
+			<button ng-click="submit(newtodo)"> Submit</button>
+
+
+		</form>
+
+		<div class="row">
+
+
+			<div ng-repeat="todo in todos track by $index">
+
+				<div class="row">
+
+				</div>
+				<div class="form-group">
+					<ul>
+						<li style="list-style-type:none"> <input type="checkbox">{{todo.name}} {{todo.description}} {{todo.url}} {{todo.price}}</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="toDoListAng.js"></script>
+
+</body>
+
+</html>
