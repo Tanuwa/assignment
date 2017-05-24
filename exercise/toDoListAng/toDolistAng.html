@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Angular</title>
 
+	<link rel="stylesheet" type="text/css" href="toDoList.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 </head>
@@ -32,14 +34,23 @@
 				</div>
 				<div class="form-group">
 					<ul>
-						<li style="list-style-type:none"> <input type="checkbox">{{todo.name}} {{todo.description}} {{todo.url}} {{todo.price}}</li>
+						<li style="list-style-type:none" ng-class="{strike: deleted }"> <input type="checkbox" ng-model="deleted">{{todo.name}} {{todo.description}} {{todo.url}} {{todo.price}}</li>
 					</ul>
+					<button ng-click="delite($index)"> Delite</button>
 				</div>
 
 			</div>
 
 		</div>
 	</div>
+
+
+	<!--
+<p ng-class="{strike: deleted, bold: important, 'has-error': error}">Map Syntax Example</p>
+<label>
+   <input type="checkbox" ng-model="deleted">
+   deleted (apply "strike" class)
+-->
 
 
 

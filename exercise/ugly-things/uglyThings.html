@@ -1,85 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='MyApp'>
+<html lang="en" ng-app="MyApp">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-
-    <link rel="stylesheet" type="text/css" href="uglyThings.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
+	<meta charset="UTF-8">
+	<title>UGLY THINGS ANGULAR</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="uglyThings.css">
 </head>
 
-<body ng-controller='MainController'>
-    <div class="container">
-        <div id="formColor">
-            <form>
-                <div class="row">
-                    <div class="col-xs-4 col-md-4">
-                        <div class="form-group">
-                            <input ng-model="badge.tytle" type="text" class="form-control" placeholder="Tytle">
-                        </div>
-                    </div>
+<body ng-controller="MainController">
+	<div class="wrapper form-wrapper container-fluid">
+		<form>
+			<div class="row">
+				<div class="col-xs-3">
+					<input type="text" placeholder="Title" ng-model="title" ng-minlength="3">
+				</div>
 
-                    <div class="col-xs-4 col-md-4">
-                        <div class="form-group">
-                            <input ng-model="badge.url" type="text" class="form-control" placeholder="Img URL">
-                        </div>
-                    </div>
+				<div class="col-xs-offset-1 col-xs-3">
+					<input type="text" placeholder="Img URL" ng-model="uglyThing.img" ng-minlength="3">
+				</div>
 
+				<div class="col-xs-offset-1 col-xs-3">
+					<input type="text" placeholder="Description" ng-model="uglyThing.description" ng-minlength="1">
+				</div>
 
-                    <div class="col-xs-4 col-md-4">
-                        <div class="form-group">
-                            <input ng-model="badge.description" type="text" class="form-control" placeholder="Descrption">
-                        </div>
-                    </div>
+				<div class="col-xs-offset-5 col-xs-4 ">
+					<button class="btn-round" type='submit' value='Submit' id="btn" ng-click="submit(uglyThing); ">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
 
-                    <center><button type="submit" id="but" class="btn btn-default" ng-click="submit(badge)">Submit</button>
-                    </center>
+	<div class="ugly-things-display wrapper container-fluid">
+		<div class="row">
+			<div class="ugly-things-header col-xs-12 ">
+				<h2>These are a few of my ugly things</h2>
+			</div>
 
-                </div>
-            </form>
+			<div ng-repeat="uglyThing in allUglyThings" class="">
+				<h3 ng-model="uglyThing.title"> {{uglyThing.title}}</h3>
+			</div>
 
+			<div ng-repeat="uglyThing in allUglyThings" class="">
+				<h4 ng-model="uglyThing.description"> {{uglyThing.description}}</h4>
+			</div>
 
-            <div class="row">
+			<div ng-repeat="uglyThing in allUglyThings" class="">
+				<img ng-src={{uglyThing.img}} />
+			</div>
 
-                <div ng-repeat="newBadge in allBadges track by $index" class=" col-xs-12">
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-6 col-sm-offset-3">
-                                <div class="form-group ">
-                                    <p type="text " class="form-control ">Tytle: {{newBadge.tytle}}</p>
-                                </div>
+		</div>
 
-                            </div>
-                            <div class="col-sm-6 col-sm-offset-3">
-                                <div class="form-group ">
-                                    <p type="text " class="form-control ">
-                                        IMG: {{newBadge.url}}
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-sm-offset-3">
-                                <div class="form-group ">
-                                    <p type="text " class="form-control ">Description:{{newBadge}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+		<!--TESTERS-->
 
 
 
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-        <script src="uglyThings.js"></script>
-    </div>
-
-
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+		<script src="uglyThings.js"></script>
 </body>
 
 </html>

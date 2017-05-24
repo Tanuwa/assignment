@@ -1,3 +1,4 @@
+
 //Write a function that accepts two numbers as parameters, and returns the sum.
 function myFunction(a, b) {
     var sum = a + b;

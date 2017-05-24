@@ -1,53 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='myApp'> ngmodual
+<html lang="en" ng-app="warmupApp">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Angular</title>
-
-
-
+	<title>ANGULARRRRR</title>
 </head>
 
-<body ng-controller='MainCtrl'>
-	<div class="container">
-
+<body>
+	<div ng-controller="MainCtrl">
 		<input type="number" ng-model="num1">
 		<input type="number" ng-model="num2">
-		<button ng-click="sum()"> Sum</button>
-		<h1>{{num1+num2}}</h1>
-
-
-		<div ng-controller="SecondCtrl">
-			{{name}}
-
-			<!--
-		<div id="myForm">
-			
-			<form>
-				<div class="row">
-					<div class="col-xs-4 col-md-4">
-						<div class="form-group">
-							<input ng-model="badge.tytle" type="text" class="form-control" placeholder="numberOne">
-						</div>
-					</div>
-
-					<div class="col-xs-4 col-md-4">
-						<div class="form-group">
-							<input ng-model="badge.url" type="text" class="form-control" placeholder="numberTwo">
-						</div>
-					</div>
-				</div>
-			</form>
-		</div>
+		<button ng-click="sum()">Sum</button>
+		<h1>{{ num1 + num2 }}</h1>
 	</div>
+
+	<div ng-controller="SecondCtrl">
+		<input type="number" ng-model="num1">
+		<input type="number" ng-model="num2">
+		<button ng-click="multiply()">Multiply</button>
+		<h1>{{ result }}</h1>
+	</div>
+
+
+
+
+
+	<!--    <h1>{{ person.firstName}} {{ person.lastName }}</h1>-->
+
+	<!--
+    <input type="checkbox" ng-model="isAdmin"> admin?
+    <input type="radio" value="male" ng-model="gender">Male
+    <input type="radio" value="female" ng-model="gender">Female
+    <input type="radio" value="other" ng-model="gender">Other
 -->
+	<!--    <button ng-click="checkGender()">Check gender</button>-->
 
-		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-		<script src="angularRefresher.js"></script>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="angularRefresher.js"></script>
 </body>
 
 </html>

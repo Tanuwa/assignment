@@ -1,15 +1,47 @@
-#formColor {
-    border: medium solid green;
-    height: 100px;
-    background-color: aquamarine;
+body,
+html {
+	margin: 0;
+	padding: 0;
 }
 
-#but {
-    background-color: green;
+body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-
+.wrapper {
+	align-content: center;
+	background-color: rgba(130, 130, 131, 0.61);
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 15px;
 }
-#panel {
-    border-style: solid green;
+
+.form-wrapper {
+	padding-bottom: 25px;
+}
+
+form {
+	padding: 30px;
+	border: 2px solid black;
+	margin-top: 30px;
+}
+
+#btn {
+	margin-top: 20px;
+}
+
+.ugly-things-display {
+	text-align: center;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: black;
+}
+
+h3 {
+	text-transform: uppercase;
 }

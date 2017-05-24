@@ -13,8 +13,11 @@ app.controller("MainCtrl", ["$scope", function ($scope) {
 		}
 		$scope.todos.push(displayTodo);
 		$scope.newtodo = {};
-	};
 
+	};
+	$scope.delite = function (del) {
+		$scope.todos.splice(del, 1);
+	}
 }]);
 
 
