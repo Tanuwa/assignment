@@ -17,7 +17,10 @@ angular.module("myApp", ["ngRoute"])
 			.when("/home", {
 				controller: 'homeController',
 				templateUrl: "home.html"
+			}).otherwise({
+				redirectTo: "/home"
 			})
+
 
 	})
 	.controller("homeController", function ($scope) {
