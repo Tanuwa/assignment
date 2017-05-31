@@ -1,0 +1,15 @@
+.databox {
+	border: 1px solid black;
+}
+
+body {
+	background: url("http://exchangedownloads.smarttech.com/public/content/c7/c7b7d2f6-0e68-41bc-b320-063ae2783f69/previews/medium/0001.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h1 {
+	color: dodgerblue
+}

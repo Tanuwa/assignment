@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Open Weather API</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<div id="pic">
+<body>
+	<center>
+		<a href="#/home">Home</a>
+		<a href="#/weather">Weather</a>
+		<a href="#/thankyou">Thank You Page</a>
+	</center>
+
+
+	<ng-view></ng-view>
+
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="components/services/database.js"></script>
+	<script src="components/weather/weather.js"></script>
+
+
+
+</body>
+	</div>
+</html>

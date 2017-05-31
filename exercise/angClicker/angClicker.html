@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body ng-controller="myCtrl">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js "></script>
+	<script src="angClicker.js"></script>
+
+
+	<div class="row">
+		<div class="col-xs-6">
+			<button ng-click="redSubmit()">Submit in Red</button>
+			<h1>Red Score: {{red}}</h1>
+		</div>
+
+		<div class="col-xs-6">
+			<button ng-click="blueSubmit()">Submit in Blue</button>
+			<h1>Blue Score:{{blue}}</h1>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="angClicker.js"></script>
+</body>
+
+</html>

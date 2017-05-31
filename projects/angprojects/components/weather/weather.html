@@ -1,0 +1,19 @@
+<div class="container" ng-controller="WeatherCtrl">
+	<center>
+		<h1>Salt Lake City Forecast</h1>
+		<!--
+<h1>City Name: {{weather.city.name}}</h1>
+<p>Country Name: {{weather.city.country}}</p>
+-->
+		<h4> Temperature for next 7 days</h4>
+	</center>
+	<div ng-repeat="something in weather.list">
+
+		<div class="col-xs-2 databox">
+			<p>Day: {{something.dt_txt }}</p>
+			<p>Temperature Max: {{something.main.temp_max}}</p>
+			<p>Temperature Min: {{something.main.temp_min}}</p>
+		</div>
+	</div>
+
+</div>

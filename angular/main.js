@@ -1,20 +1,11 @@
 var app = angular.module('MyApp', []);
 
-app.controller('MainController', function ($scope) {
+app.controller('MainController', ["scope", function ($scope) {
 
 
 
-    $scope.homie = [
-        firstName: "Johny",
-        lastName: "Mathis"
-        },
+	$scope.name = "Tetyana Hamilton";
 
-        {
-            firstName: "Bugs",
-            lastName: "Rabbit"
-        }
 
-    ]; $scope.getFullName = function () {
-    return$scope.homie.firstName + '' + $scope.person.lastName;
-};
-});
+
+}]);
