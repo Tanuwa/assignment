@@ -1,7 +1,6 @@
 var app = angular.module("learningRepeat", []);
-app.controller("myCntrl", ["scope", function ($scope) {
+app.controller("myCntrl", ["$scope", function ($scope) {
 	$scope.todos = [
-
 		{
 			name: "Hanna",
 			price: "$2.00"
@@ -16,7 +15,7 @@ app.controller("myCntrl", ["scope", function ($scope) {
 		}
 
 
-	]
+	];
 
 
 }]);
