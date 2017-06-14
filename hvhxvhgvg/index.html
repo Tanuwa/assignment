@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body ng-controller="myCont">
+
+
+
+	<div>
+		<h3>{{person.firstName}}{{person.lastName}}</h3>
+	</div>
+
+	<div ng-repeat="item in person">
+
+		<h1>{{person.firstName}}</h1>
+		<h3>{{person.lastName}}</h3>
+	</div>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
