@@ -1,0 +1,32 @@
+.navbar {
+  width: 100%;
+  background-color: black;
+}
+
+/*span{
+  padding-left: 5px;
+  padding-right:
+}*/
+
+.brand {
+  color: green;
+}
+
+.footer {
+  background-color: black;
+  padding: 20px 40px;
+
+
+}
+
+.float-left{
+  float:left;
+  text-align:left;
+  
+}
+
+.float-right{
+  float:right;
+  text-align:right;
+
+}
