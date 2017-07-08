@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import Navbar from "./navbar.js";
-import Footer from "./footer.js";
+lilllllkkllll;lllmport Footer from "./footer.js";
 import Content from "./content.js"
 import "./index.css";
 

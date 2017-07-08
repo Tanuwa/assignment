@@ -25,6 +25,8 @@ class Counter extends React.Component{
 <h3>{this.state.counter}</h3>
 <button onClick={()=>{this.up()}}>Up</button>
 <button onClick={()=>{this.down()}}>Down</button>
+
+
  </div> 
         )
     }
