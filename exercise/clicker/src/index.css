@@ -1,0 +1,17 @@
+body{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHMZsUxlGdTp0NGzHOin39WxDTLG_96Pb2iK-rIyNhZ1O_8Kky");
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+    background-attachment: fixed;
+ 
+}
+h1{
+    color: skyblue;
+}
+button{
+    padding: 4px 6px 3px;
+}
+.blue{
+    margin: 135px;
+    margin-left: 300px;
+}
