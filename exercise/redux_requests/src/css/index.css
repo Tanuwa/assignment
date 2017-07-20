@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+
+    margin: auto;
+    margin-top: 10em;
+    height: 400ph;
+    width: 400px;
+    overflow: hidden;
+    text-align: center;
+    position:relative;
+}
+
