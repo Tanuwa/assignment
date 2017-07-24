@@ -96,6 +96,12 @@ hr {
 	float: none;
 	margin: 0 auto 0;
 }
+.welcome-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
 
 footer {
 	background: white;
